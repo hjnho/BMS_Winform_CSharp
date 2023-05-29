@@ -11,28 +11,9 @@ using System.Windows.Forms;
 
 namespace _2305_BMS_Winform
 {
-    public class settingParam
-    {
-        double OverVoltageDef = 0.0;
-        double UnderVoltageDef = 0.0;
-
-        double ChargeParam = 0.0;
-        double DischargeParam = 0.0;
-
-        int ChargeDelay = 0;
-        int DischargeDelay = 0;
-
-        int CellBalanceExcution = 0;
-        int CellBalanceDelay = 0;
-
-        int RefreshDelay = 0;
-        double VoltagePreset = 0;
-
-
-    };
-
     public partial class Main : Form
     {
+        
         public Main()
         {
             InitializeComponent();
@@ -160,4 +141,25 @@ namespace _2305_BMS_Winform
 
         }
     }
+    public class settingParam
+    {
+        double OverVoltageDef = 0.0;
+        double UnderVoltageDef = 0.0;
+
+        double ChargeParam = 0.0;
+        double DischargeParam = 0.0;
+
+        int ChargeDelay = 0;
+        int DischargeDelay = 0;
+
+        int CellBalanceExcution = 0;
+        int CellBalanceDelay = 0;
+
+        int RefreshDelay = 0;
+        double VoltagePreset = 0;
+
+
+    };
 }
+
+
