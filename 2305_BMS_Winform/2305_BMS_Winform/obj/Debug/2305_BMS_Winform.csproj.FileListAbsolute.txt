@@ -19,4 +19,4 @@ C:\Users\nhobk\Desktop\Task\Winform\BMS_Winform_CSharp\2305_BMS_Winform\2305_BMS
 C:\Users\nhobk\Desktop\Task\Winform\BMS_Winform_CSharp\2305_BMS_Winform\2305_BMS_Winform\2305_BMS_Winform\obj\Debug\2305_BMS_Winform.csproj.CoreCompileInputs.cache
 C:\Users\nhobk\Desktop\Task\Winform\BMS_Winform_CSharp\2305_BMS_Winform\2305_BMS_Winform\2305_BMS_Winform\obj\Debug\2305_BMS_Winform.exe
 C:\Users\nhobk\Desktop\Task\Winform\BMS_Winform_CSharp\2305_BMS_Winform\2305_BMS_Winform\2305_BMS_Winform\obj\Debug\2305_BMS_Winform.pdb
-C:\Users\nhobk\Desktop\Task\Winform\BMS_Winform_CSharp\2305_BMS_Winform\2305_BMS_Winform\2305_BMS_Winform\obj\Debug\_2305_BMS_Winform.Main.resources
+C:\Users\nhobk\Desktop\Task\Winform\BMS_Winform_CSharp\2305_BMS_Winform\2305_BMS_Winform\2305_BMS_Winform\obj\Debug\Constants.resources

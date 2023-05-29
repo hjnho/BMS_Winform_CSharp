@@ -9,14 +9,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace _2305_BMS_Winform
 {
     public partial class Main : Form
     {
+        private Timer timer;
+        private int timerCount = 0;
         
         public Main()
         {
             InitializeComponent();
+
+            timer = new Timer();
+            timer.Interval = Constants.TIMER_INTERVAL_CELL_VOLTAGE;
+            timer.Tick += new EventHandler(timer_Tick);
+            timer.Start();
+
             this.textBox_Status.Text = "STOP";
             string filePath = "Setting.config";
 
@@ -38,6 +48,18 @@ namespace _2305_BMS_Winform
         static void CreateNewFile(string filePath)
         {
 
+        }
+
+        void timer_Tick(object sender, EventArgs e)
+        {
+            textBox_CellV1.Text = "3.7";
+            textBox_CellV2.Text = "3.7";
+            textBox_CellV3.Text = "3.7";
+            textBox_CellV4.Text = "3.7";
+            textBox_CellV5.Text = "3.7";
+            textBox_CellV6.Text = "3.7";
+            textBox_CellV7.Text = "3.7";
+            textBox_CellV8.Text = "3.7";
         }
 
         private void buttonCharge_Click(object sender, EventArgs e)
@@ -140,6 +162,10 @@ namespace _2305_BMS_Winform
         {
 
         }
+    }
+        static class Constants
+    {
+        public const int TIMER_INTERVAL_CELL_VOLTAGE = 1000; // 1Sec
     }
     public class settingParam
     {
