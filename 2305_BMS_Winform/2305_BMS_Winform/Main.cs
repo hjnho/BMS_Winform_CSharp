@@ -42,12 +42,25 @@ namespace _2305_BMS_Winform
 
         static void UpdateFileData(string filePath)
         {
+            if (File.Exists(filePath))
+            {
+                string fileContent = File.ReadAllText(filePath);
 
+                // 데이터를 수정하는 로직을 구현합니다.
+                // 예를 들어, fileContent 문자열을 수정하는 작업을 수행할 수 있습니다.
+
+                File.WriteAllText(filePath, fileContent);
+            }
         }
 
         static void CreateNewFile(string filePath)
         {
+            if (!File.Exists(filePath))
+            {
+                string fileContent = "Initial file content";
 
+                File.WriteAllText(filePath, fileContent);
+            }
         }
 
         void timer_Tick(object sender, EventArgs e)
